@@ -18,7 +18,7 @@ class Cricket():
 			d = x[1]
 			d['name'] = str(x[0])
 			if 'overs' in d:
-				d['overs'] = float(str(d['overs']/6) + "." + str(d['overs']%6))
+				d['overs'] = float(str(int(d['overs']/6)) + "." + str(d['overs']%6))
 			l.append(d)
 
 		return l
